@@ -1,0 +1,277 @@
+/*CSS For StudyBuddy */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #1F2833;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 30px;
+  }
+
+
+
+  /* Navigation Bar Styling */
+  nav {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    background-color: #1F2833;
+    justify-content: space-between; 
+    width: 50%; 
+    padding: 10px 20px; 
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  /* For screens smaller than 768px */
+@media (max-width: 768px) {
+/* Adjust navigation bar for smaller screens */
+nav ul {
+flex-direction: column;
+text-align: center;
+}
+
+/* Adjust button width for smaller screens */
+.roadmap-button {
+width: 80%;
+margin: 10px auto;
+}
+
+/* Hide additional buttons on smaller screens if needed */
+.additional-buttons {
+display: none;
+}
+}
+
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  /* Adding Hover Effect */
+  nav ul li a:hover{
+    color: #66FCF1;
+    font-size: 1.6rem;
+  }
+
+  .purple {
+     color: #66FCF1;
+  }
+/* Section 1 Styling */
+  .firstsection {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .firstsection h1 {
+    font-size: 3.0rem;
+    text-decoration: dotted black;
+    font-weight: bold;
+  }
+
+  .firstsection .p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    white-space: normal; 
+    max-width: 750px; 
+    line-height: 1.5;
+  }
+
+  /* Button Styling in Nav Bar*/
+  .login-button,
+  .signup-button {
+    background-color: #66FCF1;
+    color: #1F2833;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Hover Effect in Button*/
+  .login-button:hover,
+  .signup-button:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+  }
+  hr {
+    width: 100%; 
+    margin: 20px 0; 
+    border: 1px solid #66FCF1; 
+  }
+
+  .roadmap-button {
+    background-color: #0F172A;
+    color: #e9f1fb;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px auto; 
+    display: block;
+    text-align: center;
+    width: 250px; 
+    white-space: nowrap;
+  }
+
+  .additional-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap */
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .additional-button {
+    background-color: #0F172A;
+    color: #e9f1fb;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px; /* Adjusted margin */
+    display: block;
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .additional-button:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+  }
+
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .firstsection h1 .secondsection h1{
+      font-size: 2.0rem; /* Reduce font size for smaller screens */
+    }
+  }
+
+  /* Second Section styling*/
+
+  .secondsection {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 70px;
+  }
+/* Styling of Line*/
+  hr {
+    width: 100%; 
+    margin: 20px 0; 
+    border: 1px solid #66FCF1; 
+  }
+/* Button*/
+  .skill-button {
+    background-color: #0F172A;
+    color: #e9f1fb;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px auto; 
+    display: block;
+    text-align: center;
+    width: 250px; 
+    white-space: nowrap;
+  }
+  /*Buttons2*/
+  .additional-buttons2 {
+    display: flex;
+    flex-wrap: wrap; /* Added flex-wrap */
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+/* Button2*/
+  .additional-button2 {
+    background-color: #0F172A;
+    color: #e9f1fb;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px; /* Adjusted margin */
+    display: block;
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+/* Hover Effect in Button*/
+  .additional-button2:hover {
+    background-color: #1F2833;
+    color: #66FCF1;
+  }
+  
+
+
+  /* Footer Styling */
+  footer {
+    background-color: #0F172A;
+    color: #e9f1fb;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+  }
+
+  footer div {
+    flex-basis: calc(25% - 20px);
+    margin-right: 20px;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  footer ul li {
+    margin: 5px 0;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #e9f1fb;
+    transition: color 0.3s;
+  }
+
+  footer ul li a:hover {
+    color: #66FCF1;
+  }
+
+  footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+ 
+  #main-content {
+    margin-bottom: 100px; 
+  }
